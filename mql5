@@ -1,0 +1,111 @@
+mql5
+//+------------------------------------------------------------------+
+//|                                            Engulfing Candle Hunter MT4 |
+//|                                                           Forex Robot Easy Team |
+//|                                                                  forexroboteasy.com |
+//+------------------------------------------------------------------+
+
+//+------------------------------------------------------------------+
+//|                                                                  Indicator initialization |
+//+------------------------------------------------------------------+
+int OnInit()
+{
+   // Add necessary initialization code here
+   
+   return(INIT_SUCCEEDED);
+}
+
+//+------------------------------------------------------------------+
+//|                                                                   Indicator deinitialization |
+//+------------------------------------------------------------------+
+void OnDeinit(const int reason)
+{
+   // Add necessary deinitialization code here
+}
+
+//+------------------------------------------------------------------+
+//|                                                                  Indicator start function |
+//+------------------------------------------------------------------+
+int OnCalculate(const int rates_total,
+                const int prev_calculated,
+                const datetime &time[],
+                const double &open[],
+                const double &high[],
+                const double &low[],
+                const double &close[],
+                const long &tick_volume[],
+                const long &volume[],
+                const int &spread[])
+{
+   // Add necessary calculation code here
+   
+   return(rates_total);
+}
+
+//+------------------------------------------------------------------+
+//|                                                                   Custom trend detection function |
+//+------------------------------------------------------------------+
+bool IsTrendUp(const double &open[], const double &close[])
+{
+   // Add necessary trend detection code here
+   
+   return(true); // Replace with actual trend detection result
+}
+
+//+------------------------------------------------------------------+
+//|                                                                  Custom engulfing pattern detection function |
+//+------------------------------------------------------------------+
+bool IsEngulfingPattern(const double &open[], const double &close[])
+{
+   // Add necessary engulfing pattern detection code here
+   
+   return(true); // Replace with actual engulfing pattern detection result
+}
+
+//+------------------------------------------------------------------+
+//|                                                                  Custom trade execution function |
+//+------------------------------------------------------------------+
+void ExecuteTrade(const string symbol, const ENUM_ORDER_TYPE type, const double price, const double volume)
+{
+   // Add necessary trade execution code here
+}
+
+//+------------------------------------------------------------------+
+//|                                                                  Custom alert function |
+//+------------------------------------------------------------------+
+void SendAlert(const string message)
+{
+   // Add necessary alert code here
+}
+
+//+------------------------------------------------------------------+
+//|                                                                   Custom optimization function |
+//+------------------------------------------------------------------+
+void Optimize()
+{
+   // Add necessary optimization code here
+}
+
+//+------------------------------------------------------------------+
+//|                                                                   Custom testing function |
+//+------------------------------------------------------------------+
+void Test()
+{
+   // Add necessary testing code here
+}
+
+//+------------------------------------------------------------------+
+//|                                                                   Custom documentation function |
+//+------------------------------------------------------------------+
+void Document()
+{
+   // Add necessary documentation code here
+}
+
+//+------------------------------------------------------------------+
+//|                                                                   Custom code delivery function |
+//+------------------------------------------------------------------+
+void DeliverCode()
+{
+   // Add necessary code delivery code here
+}
